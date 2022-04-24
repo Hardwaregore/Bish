@@ -7,7 +7,7 @@ reset=`tput sgr0`
 
 require_root() {
   if [ "$(id -u)" != "0" ]; then
-    echo "\n${red}CRITICAL ERROR! ABORTING! (Err: NOT root)${reset}\n" 1>&2
+    printf "\n ${red}CRITICAL ERROR! ABORTING! (Err: NOT root)${reset} \n" 1>&2
     exit 1
   fi
 }
