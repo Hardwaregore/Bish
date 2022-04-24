@@ -7,6 +7,8 @@ require_root() {
   fi
 }
 
+require_root()
+
 command -v php > /dev/null || echo "CRITICAL ERROR! ABORTING! (Err: php NOT INSTALLED)"
 command -v curl > /dev/null|| echo "CRITICAL ERROR! ABORTING! (Err: curl NOT INSTALLED)"
 command -v unzip > /dev/null || echo "CRITICAL ERROR! ABORTING! (Err: unzip NOT INSTALLED)"
