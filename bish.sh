@@ -16,7 +16,7 @@ require_root
 
 
 
-command -v php > /dev/null || echo "CRITICAL ERROR! ABORTING! (Err: php NOT INSTALLED)"
-command -v curl > /dev/null|| echo "CRITICAL ERROR! ABORTING! (Err: curl NOT INSTALLED)"
-command -v unzip > /dev/null || echo "CRITICAL ERROR! ABORTING! (Err: unzip NOT INSTALLED)"
-command -v wget > /dev/null || echo "CRITICAL ERROR! ABORTING! (Err: wget NOT INSTALLED)"
+command -v php > /dev/null || printf "\n ${red}CRITICAL ERROR! ABORTING! (Err: NOT root)${reset} \n \n"
+command -v curl > /dev/null|| printf "\n ${red}CRITICAL ERROR! ABORTING! (Err: NOT root)${reset} \n \n"
+command -v unzip > /dev/null || printf "\n ${red}CRITICAL ERROR! ABORTING! (Err: NOT root)${reset} \n \n"
+command -v wget > /dev/null || printf "\n ${red}CRITICAL ERROR! ABORTING! (Err: NOT root)${reset} \n \n"
