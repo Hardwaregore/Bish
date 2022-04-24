@@ -13,10 +13,12 @@ require_root() {
 }
 
 require_root
+required_packages
 
 
-
+required_packages() {
 command -v php > /dev/null || printf "\n ${red}CRITICAL ERROR! ABORTING! (Err: NOT root)${reset} \n \n"
 command -v curl > /dev/null|| printf "\n ${red}CRITICAL ERROR! ABORTING! (Err: NOT root)${reset} \n \n"
 command -v unzip > /dev/null || printf "\n ${red}CRITICAL ERROR! ABORTING! (Err: NOT root)${reset} \n \n"
 command -v wget > /dev/null || printf "\n ${red}CRITICAL ERROR! ABORTING! (Err: NOT root)${reset} \n \n"
+}
