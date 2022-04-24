@@ -1,8 +1,13 @@
 #!/bin/bash
 
+red=`tput setaf 1`
+green=`tput setaf 2`
+reset=`tput sgr0`
+
+
 require_root() {
   if [ "$(id -u)" != "0" ]; then
-    echo "CRITICAL ERROR! ABORTING! (Err: NOT root)" 1>&2
+    echo "${red}CRITICAL ERROR! ABORTING! (Err: NOT root)${reset}" 1>&2
     exit 1
   fi
 }
