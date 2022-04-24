@@ -7,6 +7,8 @@ require_root() {
   fi
 }
 
+require_root
+
 
 
 command -v php > /dev/null || echo "CRITICAL ERROR! ABORTING! (Err: php NOT INSTALLED)"
