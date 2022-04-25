@@ -24,8 +24,8 @@ command -v wget > /dev/null || printf "\n ${red}CRITICAL ERROR! ABORTING! (Err: 
 
 options() {
 clear
-printf "\n ${yellow}[§GitHub§]${reset}    ${yellow}[§Google§]${reset}    ${yellow}[§GitLab]${reset} \n"
-printf "this is a test \n"
+printf "\n \n ${yellow}[§GitHub§]${reset}    ${yellow}[§Google§]${reset}    ${yellow}[§GitLab]${reset} \n"
+printf "this is a test"
 
 
 }
