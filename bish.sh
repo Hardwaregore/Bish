@@ -2,6 +2,7 @@
 
 red=`tput setaf 1`
 green=`tput setaf 2`
+yellow=`tput setaf 3`
 reset=`tput sgr0`
 
 
@@ -20,8 +21,19 @@ command -v unzip > /dev/null || printf "\n ${red}CRITICAL ERROR! ABORTING! (Err:
 command -v wget > /dev/null || printf "\n ${red}CRITICAL ERROR! ABORTING! (Err: wget NOT INSTALLED)${reset} \n \n"
 }
 
+
+options() {
+clear
+
+
+
+}
+
 require_root
 required_packages
+
+
+
 
 
 
