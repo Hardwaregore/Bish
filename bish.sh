@@ -24,18 +24,18 @@ command -v wget > /dev/null || printf "\n ${red}CRITICAL ERROR! ABORTING! (Err: 
 
 options() {
 clear
-printf "\n \n ${yellow}[§GitHub§]${reset}    ${yellow}[§Google§]${reset}    ${yellow}[§GitLab]${reset} \n"
-printf "${yellow}[§Replit§]${reset}    ${yellow}[§Skyward§]${reset}    ${yellow}[§LightSpeedSystems§]${reset} \n"
-printf "${yellow}[§PythonAnywhere§]${reset}    ${yellow}[§Linode§]${reset}    ${yellow}[§AWS§]${reset} \n"
-printf "${yellow}[§MicrosoftAzure§]${reset}    ${yellow}[§DigitalOcean§]${reset}    ${yellow}[§AppleID§]${reset} \n"
+printf "\n \n      ${yellow}[§GitHub§]${reset}    ${yellow}[§Google§]${reset}             ${yellow}[§GitLab]${reset} \n"
+printf "      ${yellow}[§Replit§]${reset}            ${yellow}[§Skyward§]${reset}         ${yellow}[§LightSpeedSystems§]${reset} \n"
+printf "      ${yellow}[§PythonAnywhere§]${reset}    ${yellow}[§Linode§]${reset}          ${yellow}[§AWS§]${reset} \n"
+printf "      ${yellow}[§MicrosoftAzure§]${reset}    ${yellow}[§DigitalOcean§]${reset}    ${yellow}[§AppleID§]${reset} \n"
 
 
 }
 
 
 
-#require_root
-#required_packages
+require_root
+required_packages
 options
 
 
