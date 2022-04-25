@@ -31,8 +31,9 @@ printf "this is a test"
 }
 
 
-# require_root
-# required_packages
+
+require_root
+required_packages
 options
 
 
