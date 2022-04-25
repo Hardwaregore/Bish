@@ -34,8 +34,8 @@ printf "${yellow}[§MicrosoftAzure§]${reset}    ${yellow}[§DigitalOcean§]${re
 
 
 
-require_root
-required_packages
+#require_root
+#required_packages
 options
 
 
