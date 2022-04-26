@@ -39,7 +39,8 @@ read -p "Please choose an option $ " user_choice
 
 input_processing() {
 
-echo "LOL"
+if [ user_choice = Github ]; then 
+
 
 
 }
