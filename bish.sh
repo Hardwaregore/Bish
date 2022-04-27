@@ -32,8 +32,8 @@ options() {
 clear
 printf "\n \n      ${yellow}[§${green}GitHub${reset}${yellow}§]${reset}            ${yellow}[§${green}Google${reset}${yellow}§]${reset}          ${yellow}[§${green}GitLab${reset}${yellow}§]${reset} \n"
 printf "      ${yellow}[§${green}Replit${reset}${yellow}§]${reset}            ${yellow}[§${green}Skyward${reset}${yellow}§]${reset}         ${yellow}[§${green}LightSpeedSystems${reset}${yellow}§]${reset} \n"
-printf "      ${yellow}[§${green}PythonAnywhere${reset}§]${reset}    ${yellow}[§${green}Linode${reset}§]${reset}          ${yellow}[§${green}AWS${reset}§]${reset} \n"
-printf "      ${yellow}[§${green}MicrosoftAzure${reset}${yellow}§]${reset}    ${yellow}[§${green}DigitalOcean${reset}${yellow}§]${reset}    ${yellow}[§${green}AppleID${reset}${yellow}§]${reset} \n"
+printf "      ${yellow}[§${green}PythonAnywhere${reset}${yellow}§]${reset}    ${yellow}[§${green}Linode${reset}${yellow}§]${reset}          ${yellow}[§${green}AWS${reset}${yellow}§]${reset} \n"
+printf "      ${yellow}[§${green}MicrosoftAzure${reset}${yellow}§]${reset}    ${yellow}[§${green}DigitalOcean${reset}${yellow}§]${reset}    ${yellow}[§${green}Canvas${reset}${yellow}§]${reset} \n"
 
 
 }
@@ -53,12 +53,53 @@ elif [ user_choice = "Google\n" ]; then
 site = Google
 printf "$site \n"
 
+elif [ user_choice = "GitLab\n" ]; then
+site = Google
+printf "$site \n"
+
+elif [ user_choice = "Replit\n" ]; then
+site = Replit
+printf "$site \n"
+
+elif [ user_choice = "Skyward\n" ]; then
+site = Skyward
+printf "$site \n"
+
+elif [ user_choice = "LightSpeedSystems\n" ]; then
+site = LightSpeedSystems
+printf "$site \n"
+
+elif [ user_choice = "PythonAnywhere\n" ]; then
+site = PythonAnywhere
+printf "$site \n"
+
+elif [ user_choice = "Linode\n" ]; then
+site = Linode
+printf "$site \n"
+
+elif [ user_choice = "AWS\n" ]; then
+site = AWS
+printf "$site \n"
+
+elif [ user_choice = "MicrosoftAzure\n" ]; then
+site = MicrosoftAzure
+printf "$site \n"
+
+elif [ user_choice = "DigitalOcean\n" ]; then
+site = DigitalOcean
+printf "$site \n"
+
+elif [ user_choice = "Canvas\n" ]; then
+site = Canvas
+printf "$site \n"
+
 fi
 }
 
 
 # require_root
 # required_packages
+disclaimer
 options
 input
 input_processing
