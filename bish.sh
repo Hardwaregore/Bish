@@ -47,6 +47,7 @@ elif [ user_choice = Google ]; then
 site = "Google"
 echo $site
 
+fi
 }
 
 
