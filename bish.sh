@@ -44,7 +44,7 @@ site = "GitHub"
 echo $site
 
 elif [ user_choice = "Google" ]; then
-site = "Google"
+site = Google
 echo $site
 
 fi
