@@ -39,7 +39,7 @@ read -p "Please choose an option $ " user_choice
 
 input_processing() {
 
-if [ user_choice == "Github" ]; then
+if [ user_choice == "GitHub" ]; then
 site = "GitHub"
 echo $site
 
