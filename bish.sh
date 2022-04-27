@@ -51,8 +51,8 @@ fi
 }
 
 
-require_root
-required_packages
+# require_root
+# required_packages
 options
 input
 input_processing
