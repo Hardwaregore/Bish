@@ -6,6 +6,7 @@ yellow=`tput setaf 3`
 reset=`tput sgr0`
 
 
+
 require_root() {
   if [ "$(id -u)" != "0" ]; then
     printf "\n ${red}CRITICAL ERROR! ABORTING! (Err: NOT root)${reset} \n \n" 1>&2
@@ -19,6 +20,11 @@ command -v php > /dev/null || printf "\n ${red}CRITICAL ERROR! ABORTING! (Err: p
 command -v curl > /dev/null|| printf "\n ${red}CRITICAL ERROR! ABORTING! (Err: curl NOT INSTALLED)${reset} \n \n"
 command -v unzip > /dev/null || printf "\n ${red}CRITICAL ERROR! ABORTING! (Err: unzip NOT INSTALLED)${reset} \n \n"
 command -v wget > /dev/null || printf "\n ${red}CRITICAL ERROR! ABORTING! (Err: wget NOT INSTALLED)${reset} \n \n"
+}
+
+
+disclaimer() {
+printf "\n                ${red}DEVELOPERS HOLD NO LIABILLITY FOR MISUSE OF BISH${reset} \n \n"
 }
 
 
@@ -49,6 +55,7 @@ printf "$site \n"
 
 fi
 }
+
 
 # require_root
 # required_packages
