@@ -40,8 +40,8 @@ echo "$user_choice"
 input_processing() {
 
 if [ user_choice = "GitHub\n" ]; then
-site = "GitHub"
-echo $site
+site = GitHub
+printf "$site \n"
 
 elif [ user_choice = "Google\n" ]; then
 site = Google
