@@ -24,7 +24,7 @@ command -v wget > /dev/null || printf "\n ${red}CRITICAL ERROR! ABORTING! (Err: 
 
 options() {
 clear
-printf "\n \n      ${yellow}[§${green}GitHub${reset}${yellow}§]${reset}    ${yellow}[§${green}Google${reset}${yellow}§]${reset}             ${yellow}[§${green}GitLab${reset}${yellow}§]${reset} \n"
+printf "\n \n      ${yellow}[§${green}GitHub${reset}${yellow}§]${reset}        ${yellow}[§${green}Google${reset}${yellow}§]${reset}             ${yellow}[§${green}GitLab${reset}${yellow}§]${reset} \n"
 printf "      ${yellow}[§${green}Replit${reset}${yellow}§]${reset}            ${yellow}[§${green}Skyward${reset}${yellow}§]${reset}         ${yellow}[§${green}LightSpeedSystems${reset}${yellow}§]${reset} \n"
 printf "      ${yellow}[§${green}PythonAnywhere${reset}§]${reset}    ${yellow}[§${green}Linode${reset}§]${reset}          ${yellow}[§${green}AWS${reset}§]${reset} \n"
 printf "      ${yellow}[§${green}MicrosoftAzure${reset}${yellow}§]${reset}    ${yellow}[§${green}DigitalOcean${reset}${yellow}§]${reset}    ${yellow}[§${green}AppleID${reset}${yellow}§]${reset} \n"
