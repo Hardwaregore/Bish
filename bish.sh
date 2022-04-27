@@ -39,11 +39,11 @@ echo "$user_choice"
 
 input_processing() {
 
-if [ user_choice = "GitHub" ]; then
+if [ user_choice = "GitHub\n" ]; then
 site = "GitHub"
 echo $site
 
-elif [ user_choice = "Google" ]; then
+elif [ user_choice = "Google\n" ]; then
 site = Google
 printf "$site \n"
 
