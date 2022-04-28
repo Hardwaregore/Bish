@@ -39,8 +39,8 @@ printf "      ${yellow}[§${green}MicrosoftAzure${reset}${yellow}§]${reset}    
 }
 
 input() {
-read -p "Please choose an option $ " user_choice
-echo "$user_choice"
+read -p "${yellow}Please choose an option $ ${reset}" user_choice
+read -p "${yellow}Please enter a port number $ ${reset}" port
 }
 
 input_processing() {
