@@ -38,65 +38,68 @@ printf "      ${yellow}[§${green}MicrosoftAzure${reset}${yellow}§]${reset}    
 
 input() {
 read -p "Please choose an option $ " user_choice
-echo "$user_choice"
+read -p "Please enter your public IP address $ " pubip
+read -p "Please enter a port number $ " portnum
 }
 
 input_processing() {
 
 if [ user_choice = "GitHub\n" ]; then
-site = GitHub
+site = github
 printf "$site \n"
+cd sites/github
+php -S $pubip:$portnum
 
 elif [ user_choice = "Google\n" ]; then
-site = Google
+site = google
 printf "$site \n"
 
 elif [ user_choice = "GitLab\n" ]; then
-site = Google
+site = gitlab
 printf "$site \n"
 
 elif [ user_choice = "Replit\n" ]; then
-site = Replit
+site = replit
 printf "$site \n"
 
 elif [ user_choice = "Skyward\n" ]; then
-site = Skyward
+site = skyward
 printf "$site \n"
 
 elif [ user_choice = "LightSpeedSystems\n" ]; then
-site = LightSpeedSystems
+site = lightspeedsystems
 printf "$site \n"
 
 elif [ user_choice = "PythonAnywhere\n" ]; then
-site = PythonAnywhere
+site = pythonanywhere
 printf "$site \n"
 
 elif [ user_choice = "Linode\n" ]; then
-site = Linode
+site = linode
 printf "$site \n"
 
 elif [ user_choice = "AWS\n" ]; then
-site = AWS
+site = aws
 printf "$site \n"
 
 elif [ user_choice = "MicrosoftAzure\n" ]; then
-site = MicrosoftAzure
+site = microsoftazure
 printf "$site \n"
 
 elif [ user_choice = "DigitalOcean\n" ]; then
-site = DigitalOcean
+site = digitalocean
 printf "$site \n"
 
 elif [ user_choice = "Canvas\n" ]; then
-site = Canvas
+site = canvas
 printf "$site \n"
 
 fi
 }
 
 
-# require_root
-# required_packages
+require_root
+required_packages
 disclaimer
 options
 input
